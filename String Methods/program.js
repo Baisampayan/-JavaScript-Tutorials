@@ -36,3 +36,20 @@ console.log(str6.search("at")); // Return the position of the "at" in the string
 // String Method match() 
 const str7 =  "The rain in SPAIN maily stays in the plain";
 console.log(str7.match("ain"));
+
+// String Method replace()
+const str8 = "Hello World";
+console.log(str8.replace("World", "Developers"));
+console.log(str8);
+
+// String Method substr()
+console.log(str8.substr(3,6));
+console.log(str8);
+
+// String Method substring()
+console.log(str8.substring(2,5));
+
+// String Method slice()
+const str10 = "The quick brown fox jumps over the lazy dog.";
+console.log(str10.slice(4));
+console.log(str10.slice(4,9));
