@@ -32,3 +32,7 @@ console.log(str5.lastIndexOf("Full",39));  // Position of the Character "e" in t
 // String Method search()
 const str6 = "Full Stack Development at Full Speed";
 console.log(str6.search("at")); // Return the position of the "at" in the string
+
+// String Method match() 
+const str7 =  "The rain in SPAIN maily stays in the plain";
+console.log(str7.match("ain"));
