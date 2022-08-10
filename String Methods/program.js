@@ -53,3 +53,31 @@ console.log(str8.substring(2,5));
 const str10 = "The quick brown fox jumps over the lazy dog.";
 console.log(str10.slice(4));
 console.log(str10.slice(4,9));
+
+// String Method toLowerCase()
+const str11 = "JAVASCRIPT";
+console.log(str11.toLowerCase());
+
+// String Method toUpperCase()
+const str12 = "javascript";
+console.log(str12.toUpperCase());
+
+// String Method toString()
+const num1 = 12345;
+console.log(num1.toString());
+console.log(typeof(num1.toString()));
+
+// String method valueOf()
+const str9 = "JavaScript Tutorials";
+console.log(str9.valueOf());
+
+// String Method split()
+const arr1 = str10.split(' '); // Splitting each words
+console.log(arr1[2]);
+console.log(arr1);
+
+const arr2 = str10.split(''); // Splitting each alphabets
+console.log(arr2);
+
+const arr3 = str10.split(" ",4); // Splitting the sentence within a limit
+console.log(arr3);
