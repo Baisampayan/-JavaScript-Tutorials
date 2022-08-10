@@ -81,3 +81,8 @@ console.log(arr2);
 
 const arr3 = str10.split(" ",4); // Splitting the sentence within a limit
 console.log(arr3);
+
+// String Method trim()
+const greeting = '   Hello world!   ';
+console.log(greeting);
+console.log(greeting.trim());
