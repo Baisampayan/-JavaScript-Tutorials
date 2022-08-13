@@ -81,3 +81,78 @@ if(!hasElement) {
 } else {
     console.log("The Element is present");
 }
+
+// Display all the even numbers from the array
+const nums1 = [10, 8, 2, 31, 10, 1, 65, 10, 12, 5, 8, 130, 44];
+let tempArr = [];
+nums1.find((value) => {
+    if(value%2 === 0) {
+        tempArr.push(value);
+    }
+});
+console.log(tempArr);
+
+/**
+ *  Array findIndex() Method
+ */
+// Displaying the position of the Number '1' in the array nums1
+console.log(nums1.findIndex((element) => {
+    return element === 1;
+}));
+
+// Displaying the position of the fruit 'cantaloupe' in the array fruits1
+const fruits1 = ['apple', 'grapefruit', 'banana', 'cantaloupe', 'grapes', 'mango', 'blueberries', 'orange'];
+console.log(fruits1.findIndex((fruit) => {
+    return fruit === 'cantaloupe';
+}));
+
+// Displaying the position of first Odd Number in the array nums1
+console.log(nums1.findIndex((element) => {
+    return element%2 !== 0;
+}));
+
+/**
+ *  Array forEach() Method
+ */
+// Displaying a multiplication Table
+const table = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const multiplier = 12;
+table.forEach((element) => {
+    console.log(element + ' x ' + multiplier + ' = ' + (parseInt(element*multiplier)));
+});
+
+// Display all the even numbers
+tempArr = [];
+nums1.forEach((ele) => {
+    if(ele % 2 == 0) {
+        tempArr.push(ele);
+    }
+});
+console.log(tempArr);
+
+/**
+ * Array includes() Method
+ */
+// Checking if the fruit 'cantaloupe' is present in the array fruits1
+console.log(fruits1.includes('cantaloupe'));
+
+// Checking if the number '10' is present in the array nums1 after index - 5
+console.log(nums1.includes(10, 5));
+
+/**
+ * Array map() Method
+ */
+// SquareRoot
+console.log(nums1.map((element) => {
+    return Math.sqrt(element)
+}));
+
+// Displaying a multiplication Table
+const multiplier2 = 12;
+table.map((element) => {
+    console.log(element + ' x ' + multiplier + ' = ' + (parseInt(element*multiplier)));
+});
+
+// Doubling up the elements
+console.log(nums1.map((elements) => elements*2 ));
+console.log(nums1);
