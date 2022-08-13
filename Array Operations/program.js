@@ -64,3 +64,20 @@ function filterItems(arr, query) {
     return arr.filter((el) => el.toLowerCase().includes(query.toLowerCase()));
 }
 console.log(filterItems(fruits, 'an'));
+
+/**
+ *  Array find() Method
+ */
+// Finding elements from the array names
+const hasElement = names.find(function(element) {
+    if(element === "Charlotte") {
+        return true;
+    } else {
+        return false;
+    }
+});
+if(!hasElement) {
+    console.log("The Element is not present");
+} else {
+    console.log("The Element is present");
+}
