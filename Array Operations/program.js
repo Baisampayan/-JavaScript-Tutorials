@@ -1,6 +1,6 @@
-/**
- *  Array Concat() Method
- */
+/**********************************************************************************************
+ * Array Concat() Method
+ **********************************************************************************************/
 const arr1 = [1, 2, 3, 4, 5];
 const arr2 = [6, 7, 8, 9, 10];
 const arr3 = [11, 12, 13, 14, 15];
@@ -10,9 +10,9 @@ console.log(arr1.concat(arr2));
 console.log(arr1.concat(arr2,arr3));
 
 
-/**
+/**********************************************************************************************
  * Array indexOf() Method
- */
+ **********************************************************************************************/
 const arr4 = [10, 8, 2, 31, 10, 1, 65, 10];
 // finding the first occurance of the element
 console.log(arr4.indexOf(10));
@@ -28,9 +28,9 @@ while(tempIndex !== -1) {
 console.log(allIndex);
 
 
-/**
+/**********************************************************************************************
  * Array filter() Method
- */
+ **********************************************************************************************/
 // Displaying numbers for arr4 that are greater than 10
 console.log(arr4.filter(num => num >10));
 
@@ -65,9 +65,10 @@ function filterItems(arr, query) {
 }
 console.log(filterItems(fruits, 'an'));
 
-/**
- *  Array find() Method
- */
+
+/**********************************************************************************************
+ * Array find() Method
+ **********************************************************************************************/
 // Finding elements from the array names
 const hasElement = names.find(function(element) {
     if(element === "Charlotte") {
@@ -92,9 +93,10 @@ nums1.find((value) => {
 });
 console.log(tempArr);
 
-/**
- *  Array findIndex() Method
- */
+
+/**********************************************************************************************
+ * Array findIndex() Method
+ **********************************************************************************************/
 // Displaying the position of the Number '1' in the array nums1
 console.log(nums1.findIndex((element) => {
     return element === 1;
@@ -111,9 +113,10 @@ console.log(nums1.findIndex((element) => {
     return element%2 !== 0;
 }));
 
-/**
- *  Array forEach() Method
- */
+
+/**********************************************************************************************
+ * Array forEach() Method
+ **********************************************************************************************/
 // Displaying a multiplication Table
 const table = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const multiplier = 12;
@@ -139,9 +142,10 @@ console.log(fruits1.includes('cantaloupe'));
 // Checking if the number '10' is present in the array nums1 after index - 5
 console.log(nums1.includes(10, 5));
 
-/**
+
+/**********************************************************************************************
  * Array map() Method
- */
+ **********************************************************************************************/
 // SquareRoot
 console.log(nums1.map((element) => {
     return Math.sqrt(element)
