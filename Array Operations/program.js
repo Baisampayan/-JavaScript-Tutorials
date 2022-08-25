@@ -165,4 +165,8 @@ console.log(nums1);
  * Array sort() Method
  **********************************************************************************************/
 const nums2 = [4, 96, 8, 3, 5, 8, 12, 64, 65, 45, 58, 51, 96, 87];
+// Ascending
 console.log(nums2.sort((a, b) => {return a-b}));
+
+// Descending
+console.log(nums2.sort((a, b) => {return b-a}));
