@@ -160,3 +160,9 @@ table.map((element) => {
 // Doubling up the elements
 console.log(nums1.map((elements) => elements*2 ));
 console.log(nums1);
+
+/**********************************************************************************************
+ * Array sort() Method
+ **********************************************************************************************/
+const nums2 = [4, 96, 8, 3, 5, 8, 12, 64, 65, 45, 58, 51, 96, 87];
+console.log(nums2.sort((a, b) => {return a-b}));
