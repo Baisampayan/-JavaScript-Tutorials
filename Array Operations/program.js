@@ -51,10 +51,9 @@ function isPrime(value) {
     for(let i=2; value > i; i++) {
         if(value % i === 0) {
             return false;
-        } else {
-            return value > 1;
         }
     }
+    return value > 1;
 }
 console.log(mixNumbers.filter(isPrime));
 
