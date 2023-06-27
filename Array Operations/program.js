@@ -160,6 +160,15 @@ table.map((element) => {
 console.log(nums1.map((elements) => elements*2 ));
 console.log(nums1);
 
+
+// Converting lower case into upper case using map 
+var arr = ["avengers", "captain america", "ironman", "black panther"];
+let array2 = arr.map((elements)=>{
+    return elements.toUpperCase();
+});
+
+console.log(array2);
+
 /**********************************************************************************************
  * Array sort() Method
  **********************************************************************************************/
